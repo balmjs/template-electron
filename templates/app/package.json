@@ -1,0 +1,6 @@
+{
+  "name": "application-name",
+  "productName": "your-product-name",
+  "version": "0.0.1",
+  "main": "./js/main.js"
+}
