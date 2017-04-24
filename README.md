@@ -1,5 +1,5 @@
 # BalmJS template - electron
-> A Electron app boilerplate with balmjs。
+> A Electron app boilerplate with balmjs.
 
 ## Installation
 
