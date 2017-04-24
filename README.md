@@ -1,5 +1,5 @@
 # BalmJS template - electron
-> A Vue.js project
+> A Electron app boilerplate with balmjs。
 
 ## Installation
 
