@@ -1,8 +1,6 @@
-const balm = require('balm');
-const webpack = require('webpack');
-const packager = require('electron-packager');
-const packagerConfig = require('./packager.config');
-const path = require('path');
+var balm = require('balm');
+var packager = require('electron-packager');
+var packagerConfig = require('./packager.config');
 
 balm.config = {
   server: {
@@ -23,18 +21,13 @@ balm.config = {
   styles: {
     ext: 'scss'
   },
-  html: {
-    replacement: {
-      begin: './'
-    }
-  },
   scripts: {
     entry: {
-      'renderer': './app/js/renderer/index',
-      'main': './app/js/main'
+      'renderer': './app/js/renderer/index.js',
+      'main': './app/js/main.js'
     },
     target: 'electron-renderer',
-    extends: {
+    webpack: {
       node: {
         __dirname: false
       }
@@ -42,23 +35,19 @@ balm.config = {
   }
 };
 
-balm.go(function (mix) {
-  if(balm.config.production){
-    mix.copy('./app/package.json', './dist');
-    mix.end(function () {
+balm.go(function(mix) {
+  if (balm.config.production) {
+    mix.end(function() {
       // asar.createPackage('./dist', 'app.asar', function () {
       //   console.log(`app.asar has been created.`);
       // });
-      packager(packagerConfig, function done_callback (err, appPaths) {
+      packager(packagerConfig, function done_callback(err, appPaths) {
         console.log('done.');
       })
     });
-
   } else {
-
-    mix.end(function () {
+    mix.end(function() {
       require('child_process').exec('npm start');
     });
-
   }
 });
