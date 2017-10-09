@@ -35,19 +35,17 @@ balm.config = {
   }
 };
 
-balm.go(function(mix) {
+balm.config.afterTask = () => {
   if (balm.config.production) {
-    mix.end(function() {
-      // asar.createPackage('./dist', 'app.asar', function () {
-      //   console.log(`app.asar has been created.`);
-      // });
-      packager(packagerConfig, function done_callback(err, appPaths) {
-        console.log('done.');
-      })
+    // asar.createPackage('./dist', 'app.asar', function () {
+    //   console.log(`app.asar has been created.`);
+    // });
+    packager(packagerConfig, function done_callback(err, appPaths) {
+      console.log('done.');
     });
   } else {
-    mix.end(function() {
-      require('child_process').exec('npm start');
-    });
+    require('child_process').exec('npm start');
   }
-});
+};
+
+balm.go();
