@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/gulp",
+    "dev": "./node_modules/.bin/gulp --silent",
     "start": "./node_modules/.bin/electron ./app --debug",
-    "prod": "./node_modules/.bin/gulp --production"
+    "prod": "./node_modules/.bin/gulp --silent --production"
   },
   "devDependencies": {
     "asar": "^0.14.0",
