@@ -35,7 +35,7 @@ balm.config = {
   }
 };
 
-balm.config.afterTask = () => {
+balm.afterTask = () => {
   if (balm.config.production) {
     // asar.createPackage('./dist', 'app.asar', function () {
     //   console.log(`app.asar has been created.`);
