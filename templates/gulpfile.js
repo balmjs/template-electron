@@ -23,8 +23,8 @@ balm.config = {
   },
   scripts: {
     entry: {
-      'renderer': './app/js/renderer/index.js',
-      'main': './app/js/main.js'
+      renderer: './app/js/renderer/index.js',
+      main: './app/js/main.js'
     },
     target: 'electron-renderer',
     webpack: {
@@ -33,6 +33,9 @@ balm.config = {
       }
     }
   }
+  // More Config
+  // Documentation - http://balmjs.com/docs/en/configuration/toc.html
+  // 中文文档 - http://balmjs.com/docs/zh-cn/configuration/toc.html
 };
 
 balm.afterTask = () => {
