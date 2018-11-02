@@ -9,9 +9,9 @@
     "prod": "./node_modules/.bin/gulp --silent --production"
   },
   "devDependencies": {
-    "asar": "^0.14.3",
-    "balm": "^0.24.2",
-    "electron-packager": "^12.1.2",
+    "asar": "^0.14.5",
+    "balm": "^0.24.6",
+    "electron-packager": "^12.2.0",
     "electron-prebuilt": "^1.4.13",
     "gulp": "^3.9.1"
   },
