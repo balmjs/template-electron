@@ -1,9 +1,9 @@
 // Documentation - http://balmjs.com/docs/en/configuration/toc.html
 // 中文文档 - http://balmjs.com/docs/zh-cn/configuration/toc.html
 
-var balm = require('balm');
-var packager = require('electron-packager');
-var packagerConfig = require('./packager.config');
+const balm = require("balm");
+const packager = require("electron-packager");
+const packagerConfig = require("./packager.config");
 
 balm.config = {
   server: {
@@ -11,25 +11,25 @@ balm.config = {
     localOnly: true
   },
   roots: {
-    source: 'app'
+    source: "app"
   },
   paths: {
     source: {
-      css: 'css',
-      js: 'js',
-      img: 'images',
-      font: 'fonts'
+      css: "css",
+      js: "js",
+      img: "images",
+      font: "fonts"
     }
   },
   styles: {
-    ext: 'scss'
+    ext: "scss"
   },
   scripts: {
     entry: {
-      renderer: './app/js/renderer/index.js',
-      main: './app/js/main.js'
+      renderer: "./app/js/renderer/index.js",
+      main: "./app/js/main.js"
     },
-    target: 'electron-renderer',
+    target: "electron-renderer",
     webpack: {
       node: {
         __dirname: false
@@ -40,15 +40,15 @@ balm.config = {
 };
 
 balm.afterTask = () => {
-  if (balm.config.production) {
+  if (balm.config.isProd) {
     // asar.createPackage('./dist', 'app.asar', function () {
     //   console.log(`app.asar has been created.`);
     // });
     packager(packagerConfig, function done_callback(err, appPaths) {
-      console.log('done.');
+      console.log("done.");
     });
   } else {
-    require('child_process').exec('npm start');
+    require("child_process").exec("npm start");
   }
 };
 
