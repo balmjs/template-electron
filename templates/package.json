@@ -1,6 +1,6 @@
 {
   "name": "template-electron",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,9 @@
     "prod": "gulp --silent --production"
   },
   "devDependencies": {
-    "asar": "^0.14.6",
-    "balm": "^1.0.0",
-    "electron-packager": "^13.0.1",
+    "asar": "^1.0.0",
+    "balm": "^1.3.2",
+    "electron-packager": "^13.1.1",
     "electron-prebuilt": "^1.4.13",
     "gulp": "^4.0.0"
   },

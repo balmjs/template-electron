@@ -1,4 +1,5 @@
 # BalmJS template - electron
+
 > An Electron app boilerplate with balmjs.
 
 ## Installation
@@ -23,3 +24,5 @@ npm run dev
 # For production
 npm run prod
 ```
+
+> thx [BalmJS](https://balmjs.com/)
