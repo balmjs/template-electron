@@ -1,7 +1,7 @@
 {
   "name": "template-electron",
-  "version": "4.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "An Electron app boilerplate with balmjs",
   "main": "index.js",
   "scripts": {
     "dev": "gulp --silent",
@@ -10,8 +10,8 @@
   },
   "devDependencies": {
     "asar": "^2.0.1",
-    "balm": "^1.5.1",
-    "electron-packager": "^13.1.1",
+    "balm": "^1.5.7",
+    "electron-packager": "^14.0.0",
     "electron-prebuilt": "^1.4.13",
     "gulp": "^4.0.2"
   },
