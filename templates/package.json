@@ -10,8 +10,8 @@
   },
   "devDependencies": {
     "asar": "^2.0.1",
-    "balm": "^1.5.7",
-    "electron-packager": "^14.0.0",
+    "balm": "^1.7.0",
+    "electron-packager": "^14.0.3",
     "electron-prebuilt": "^1.4.13",
     "gulp": "^4.0.2"
   },
