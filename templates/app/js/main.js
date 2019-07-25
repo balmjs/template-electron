@@ -13,7 +13,7 @@ let win;
 let createWindow = () => {
   // 创建浏览器窗口。
   win = new BrowserWindow({
-    width: 800,
+    width: 960,
     height: 600
   });
   // 加载应用的 index.html。
