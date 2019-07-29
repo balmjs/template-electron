@@ -6,6 +6,14 @@ const arg = process.argv[2];
 const isDev = arg === '--debug';
 const isProduction = arg === '--production';
 
+// 可选: 关闭警告.
+// 但是建议不要关闭警告. 如果有需求可以启用下面被注释的代码
+
+/* if (isDev) {
+  delete process.env.ELECTRON_ENABLE_SECURITY_WARNINGS;
+  process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = true;
+} */
+
 // 保持一个对于 window 对象的全局引用，如果你不这样做，
 // 当 JavaScript 对象被垃圾回收， window 会被自动地关闭
 let win;
@@ -14,9 +22,13 @@ let createWindow = () => {
   // 创建浏览器窗口。
   win = new BrowserWindow({
     width: 960,
-    height: 600
+    height: 600,
+    webPreferences: {
+      nodeIntegration: true
+    }
   });
   // 加载应用的 index.html。
+  // NOTE: 如果开发环境中你有其他程序占用了3000端口, 请更改远程链接的端口
   win.loadURL(
     isDev
       ? 'http://localhost:3000'
