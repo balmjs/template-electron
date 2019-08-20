@@ -1,8 +1,8 @@
 {
-  "name": "template-electron",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "An Electron app boilerplate with balmjs",
-  "main": "index.js",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
   "scripts": {
     "dev": "gulp --silent",
     "start": "./node_modules/.bin/electron ./app --debug",
@@ -11,10 +11,9 @@
   "devDependencies": {
     "asar": "^2.0.1",
     "balm": "^1.8.1",
-    "electron": "^6.0.2",
+    "electron": "^6.0.3",
     "electron-packager": "^14.0.4",
     "gulp": "^4.0.2"
   },
-  "author": "74sharlock",
-  "license": "ISC"
+  "private": true
 }
