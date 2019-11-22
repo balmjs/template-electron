@@ -6,13 +6,13 @@
   "scripts": {
     "dev": "gulp --silent",
     "start": "./node_modules/.bin/electron ./app --debug",
-    "prod": "gulp --silent --production"
+    "prod": "gulp --silent -p"
   },
   "devDependencies": {
     "asar": "^2.0.1",
-    "balm": "^1.8.1",
-    "electron": "^6.0.3",
-    "electron-packager": "^14.0.4",
+    "balm": "^2.0.4",
+    "electron": "^7.1.2",
+    "electron-packager": "^14.1.1",
     "gulp": "^4.0.2"
   },
   "private": true
