@@ -1,5 +1,5 @@
 {
-  "name": "app-name",
+  "name": "hello-balmjs",
   "productName": "my-app",
   "version": "0.0.1",
   "main": "./js/main.js"

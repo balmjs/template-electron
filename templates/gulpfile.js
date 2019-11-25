@@ -1,4 +1,3 @@
-const path = require('path');
 const balm = require('balm');
 const packager = require('electron-packager');
 const packagerConfig = require('./packager.config');
@@ -44,17 +43,10 @@ async function bundleElectronApp(options) {
 
 balm.afterTask = () => {
   if (balm.config.env.isProd) {
-    // asar.createPackage('./dist', 'app.asar', function () {
-    //   console.log(`app.asar has been created.`);
-    // });
     bundleElectronApp(packagerConfig);
   } else {
     exec('npm start');
   }
 };
 
-balm.go(mix => {
-  if (mix.env.isProd) {
-    mix.remove('build');
-  }
-});
+balm.go();
