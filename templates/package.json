@@ -11,7 +11,7 @@
   "devDependencies": {
     "asar": "^2.0.1",
     "balm": "^2.0.4",
-    "electron": "^7.1.2",
+    "electron": "^6.1.5",
     "electron-packager": "^14.1.1",
     "gulp": "^4.0.2"
   },
