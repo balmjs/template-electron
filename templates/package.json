@@ -9,10 +9,10 @@
     "prod": "gulp --silent -p"
   },
   "devDependencies": {
-    "asar": "^2.0.3",
-    "balm": "^2.3.0",
-    "electron": "^6.1.7",
-    "electron-packager": "^14.2.0",
+    "asar": "^2.1.0",
+    "balm": "^2.8.0",
+    "electron": "^6.1.8",
+    "electron-packager": "^14.2.1",
     "gulp": "^4.0.2"
   },
   "private": true

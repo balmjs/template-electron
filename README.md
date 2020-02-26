@@ -25,14 +25,14 @@ npm run dev
 npm run prod
 ```
 
-## FAQ for `electron@7`
+## FAQ
 
 > `ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/` for China
 
 Q:
 
 ```sh
-UnhandledPromiseRejectionWarning: HTTPError: Response code 404 (Not Found)
+UnhandledPromiseRejectionWarning: HTTPError: Response code 404 (Not Found) for `https://npm.taobao.org/mirrors/electron/v6.1.8/electron-v6.1.8-darwin-x64.zip`
 ```
 
 A:
@@ -41,8 +41,8 @@ A:
 
 ```js
 // line 39
-// var path = mirrorVar("customDir", opts, details.version);
-var path = mirrorVar("customDir", opts, details.version.replace("v", ""));
+// const path = mirrorVar('customDir', opts, details.version).replace('{{ version }}', details.version.replace(/^v/, ''));
+const path = mirrorVar("customDir", opts, details.version.replace("v", ""));
 ```
 
 > thx [BalmJS](https://balmjs.com/)
