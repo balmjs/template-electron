@@ -1,4 +1,4 @@
-# BalmJS template - electron
+# BalmJS template - `electron`
 
 > An Electron app boilerplate with BalmJS.
 
@@ -12,7 +12,6 @@ balm init electron my-project
 cd my-project
 
 npm install
-
 ```
 
 ## Enjoy
@@ -32,7 +31,7 @@ npm run prod
 Q:
 
 ```sh
-UnhandledPromiseRejectionWarning: HTTPError: Response code 404 (Not Found) for `https://npm.taobao.org/mirrors/electron/v6.1.8/electron-v6.1.8-darwin-x64.zip`
+UnhandledPromiseRejectionWarning: HTTPError: Response code 404 (Not Found) for `https://npm.taobao.org/mirrors/electron/v6.1.9/electron-v6.1.9-darwin-x64.zip`
 ```
 
 A:
@@ -42,7 +41,7 @@ A:
 ```js
 // line 39
 // const path = mirrorVar('customDir', opts, details.version).replace('{{ version }}', details.version.replace(/^v/, ''));
-const path = mirrorVar("customDir", opts, details.version.replace("v", ""));
+const path = mirrorVar('customDir', opts, details.version.replace('v', ''));
 ```
 
-> thx [BalmJS](https://balmjs.com/)
+- thx [BalmJS](https://balmjs.com/)

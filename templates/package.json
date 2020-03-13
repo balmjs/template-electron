@@ -5,13 +5,15 @@
   "author": "{{ author }}",
   "scripts": {
     "dev": "gulp --silent",
-    "start": "./node_modules/.bin/electron ./app --debug",
-    "prod": "gulp --silent -p"
+    "start": "electron ./app --debug",
+    "bak:taobao": "mv ./node_modules/@electron/get/dist/cjs/artifact-utils.js ./node_modules/@electron/get/dist/cjs/_artifact-utils.js",
+    "fix:taobao": "cp ./cjs/artifact-utils.js ./node_modules/@electron/get/dist/cjs",
+    "prod": "npm run fix:taobao && gulp --silent -p"
   },
   "devDependencies": {
-    "asar": "^2.1.0",
-    "balm": "^2.8.0",
-    "electron": "^6.1.8",
+    "asar": "^3.0.1",
+    "balm": "^2.9.0",
+    "electron": "^6.1.9",
     "electron-packager": "^14.2.1",
     "gulp": "^4.0.2"
   },
