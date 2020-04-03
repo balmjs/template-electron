@@ -26,7 +26,7 @@ npm run prod
 
 ## FAQ
 
-> `ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/` for China
+> `ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/` for `electron@6`
 
 Q:
 

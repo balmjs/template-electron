@@ -4,16 +4,14 @@
   "description": "{{ description }}",
   "author": "{{ author }}",
   "scripts": {
-    "dev": "gulp --silent",
+    "dev": "gulp -S",
     "start": "electron ./app --debug",
-    "bak:taobao": "mv ./node_modules/@electron/get/dist/cjs/artifact-utils.js ./node_modules/@electron/get/dist/cjs/_artifact-utils.js",
-    "fix:taobao": "cp ./cjs/artifact-utils.js ./node_modules/@electron/get/dist/cjs",
-    "prod": "npm run fix:taobao && gulp --silent -p"
+    "prod": "gulp -S -p"
   },
   "devDependencies": {
-    "asar": "^3.0.1",
-    "balm": "^2.9.0",
-    "electron": "^6.1.9",
+    "asar": "^3.0.3",
+    "balm": "^2.11.1",
+    "electron": "^8.2.0",
     "electron-packager": "^14.2.1",
     "gulp": "^4.0.2"
   },
