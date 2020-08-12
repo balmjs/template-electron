@@ -2,16 +2,32 @@
 
 > An Electron app boilerplate with BalmJS.
 
+## Requirements
+
+```sh
+yarn global add balm-core balm-cli
+# OR
+npm install -g balm-core balm-cli
+```
+
+```sh
+# Verify
+balm -V
+
+# Output:
+# balm-cli: 2.0.0
+# balm-core: 3.0.0
+```
+
 ## Installation
 
 ```sh
-npm install -g balm-cli
-
 balm init electron my-project
 
 cd my-project
-
-npm install
+yarn
+# or
+npm i
 ```
 
 ## Enjoy
@@ -41,7 +57,7 @@ A:
 ```js
 // line 39
 // const path = mirrorVar('customDir', opts, details.version).replace('{{ version }}', details.version.replace(/^v/, ''));
-const path = mirrorVar('customDir', opts, details.version.replace('v', ''));
+const path = mirrorVar("customDir", opts, details.version.replace("v", ""));
 ```
 
-- thx [BalmJS](https://balmjs.com/)
+- thx [BalmJS](https://balm.js.org/)

@@ -1,5 +1,4 @@
 const { exec } = require('child_process');
-const balm = require('balm');
 const packager = require('electron-packager');
 const packagerConfig = require('./packager.config');
 
@@ -8,12 +7,14 @@ async function bundleElectronApp(options) {
   console.log(`Electron app bundles created: ${appPaths.join('\n')}`);
 }
 
-function afterTask() {
-  if (balm.config.env.isProd) {
-    bundleElectronApp(packagerConfig);
-  } else {
-    exec('npm start');
-  }
+function getAfterTask(balm) {
+  return () => {
+    if (balm.config.env.isProd) {
+      bundleElectronApp(packagerConfig);
+    } else {
+      exec('npm start');
+    }
+  };
 }
 
-module.exports = afterTask;
+module.exports = getAfterTask;

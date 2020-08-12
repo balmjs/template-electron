@@ -4,16 +4,15 @@
   "description": "{{ description }}",
   "author": "{{ author }}",
   "scripts": {
-    "dev": "gulp -S",
-    "start": "electron ./app --debug",
-    "prod": "gulp -S -p"
+    "dev": "balm",
+    "prod": "balm -p",
+    "start": "electron ./app --debug"
   },
   "devDependencies": {
     "asar": "^3.0.3",
-    "balm": "^2.22.0",
-    "electron": "^9.1.0",
-    "electron-packager": "^15.0.0",
-    "gulp": "^4.0.2"
+    "balm": "^3.0.0-beta.14",
+    "electron": "^9.2.0",
+    "electron-packager": "^15.0.0"
   },
   "private": true
 }

@@ -1,6 +1,6 @@
 {
   "name": "hello-balmjs",
   "productName": "my-app",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "./js/main.js"
 }
