@@ -4,7 +4,7 @@ const packagerConfig = require('./packager.config');
 
 async function bundleElectronApp(options) {
   const appPaths = await packager(options);
-  console.log(`Electron app bundles created: ${appPaths.join('\n')}`);
+  console.log(`Electron app bundles created:\n${appPaths.join('\n')}`);
 }
 
 function getAfterTask(balm) {

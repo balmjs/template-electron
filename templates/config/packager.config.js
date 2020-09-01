@@ -1,5 +1,5 @@
-// [electron-packager Programmatic API]:
-// https://github.com/electron-userland/electron-packager/blob/master/docs/api.md
+// electron-packager API:
+// https://electron.github.io/electron-packager/
 module.exports = {
   dir: './dist',
   out: './build',

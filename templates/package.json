@@ -10,9 +10,9 @@
   },
   "devDependencies": {
     "asar": "^3.0.3",
-    "balm": "^3.0.0-beta.14",
-    "electron": "^9.2.0",
-    "electron-packager": "^15.0.0"
+    "balm": "^3.0.0",
+    "electron": "^10.1.0",
+    "electron-packager": "^15.1.0"
   },
   "private": true
 }

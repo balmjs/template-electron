@@ -60,4 +60,4 @@ A:
 const path = mirrorVar("customDir", opts, details.version.replace("v", ""));
 ```
 
-- thx [BalmJS](https://balm.js.org/)
+- thx [BalmJS](https://github.com/balmjs/balm)

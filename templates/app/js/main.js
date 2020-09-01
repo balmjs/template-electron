@@ -11,6 +11,7 @@ let createWindow = () => {
     width: 1024,
     height: 768,
     webPreferences: {
+      devTools: isDev,
       nodeIntegration: true
     }
   });
