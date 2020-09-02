@@ -2,5 +2,5 @@
   "name": "hello-balmjs",
   "productName": "my-app",
   "version": "1.0.0",
-  "main": "./js/main.js"
+  "main": "./desktop/main.js"
 }

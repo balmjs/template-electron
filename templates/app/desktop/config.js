@@ -12,6 +12,6 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const INDEX = isDev
   ? 'http://localhost:3000'
-  : `file://${path.join(__dirname, '..', 'index.html')}`;
+  : `file://${path.join(__dirname, '../web/index.html')}`;
 
 module.exports = { isDev, isProd, INDEX };

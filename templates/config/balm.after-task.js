@@ -10,9 +10,9 @@ async function bundleElectronApp(options) {
 function getAfterTask(balm) {
   return () => {
     if (balm.config.env.isProd) {
-      bundleElectronApp(packagerConfig);
+      balm.config.env.inDesktopApp && bundleElectronApp(packagerConfig);
     } else {
-      exec('npm start');
+      exec('electron ./app');
     }
   };
 }
