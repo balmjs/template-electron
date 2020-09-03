@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "balm --config config/balm.web.js",
     "build:web": "balm -p --config config/balm.web.js",
-    "build:app": "balm -p -electron --config config/balm.app.js",
-    "prod": "npm run build:web && npm run build:app"
+    "build:desktop": "balm -p -electron --config config/balm.desktop.js",
+    "prod": "npm run build:web && npm run build:desktop"
   },
   "devDependencies": {
     "asar": "^3.0.0",
