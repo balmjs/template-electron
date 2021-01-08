@@ -11,9 +11,9 @@
   },
   "devDependencies": {
     "asar": "^3.0.0",
-    "balm": "^3.1.0",
-    "electron": "^10.1.0",
-    "electron-packager": "^15.1.0"
+    "balm": "^3.9.0",
+    "electron": "^11.1.0",
+    "electron-packager": "^15.2.0"
   },
   "private": true
 }
