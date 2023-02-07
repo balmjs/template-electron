@@ -14,7 +14,7 @@ const config = {
     entry: {
       renderer: './app/web/scripts/renderer.js'
     },
-    target: 'electron-renderer'
+    target: ['web', 'electron-renderer']
   }
   // More Config
 };
